@@ -1,0 +1,20 @@
+every serer has a staus code evryday
+response has http headerwith a staus code
+status code tells behind the scene 
+debugging 
+serach engine optimization-websites ranking
+
+
+shot msg from server to client 
+status code-chrome-devlopertools-network
+
+500 types of staus code 
+1. 100-199->informational purpose
+2.200-299->success 
+3.300-399->redirect
+4.400-499->client side error
+5.500-599->server crash down 
+
+600 - staus code create by own 
+
+redirect->directing from one webpage to other

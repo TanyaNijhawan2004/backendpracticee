@@ -1,0 +1,61 @@
+express
+1. syntax simple
+2.read write simple
+3.routuing easy 
+4.secure
+5.easy 
+6.stayis code sent
+
+http
+1. get=to get data 
+2.post=to send data 
+3.pacth=to update data
+4.delete=to delete data 
+
+param
+/user/abhishek
+as it is data db m data leke ate hao 
+
+query 
+filetring
+
+amazon.in/?iphone=13&
+
+api
+rest api
+rules follow
+1. respons should be same 
+2. routes shoulde be nouns 
+3.htttp methods use
+4. always json format
+5.stateless
+
+95%
+community based 
+
+
+middleware
+as soon as request comes in before leaving the 
+server 
+whatever function happens that middleware
+
+all functions in backend are get 
+sequential 
+
+error handling
+404 pages
+logger functions
+app.use(express.json)-convert json to java script obj 
+
+
+
+
+
+
+
+
+
+
+
+
+
