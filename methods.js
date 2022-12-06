@@ -1,10 +1,11 @@
 //require dependicy downloaded
 const express=require('express');
-const userModel=require('../models/userModel');
+const userModel=require('./models/userModel');
 const cookieParser=require('cookie-parser');
 const { result, create, reverse } = require('lodash');
 const bodyParser = require('body-parser');
 const emailValidator=require('email-validator');
+const protectRoute=require('./Routers/authHelper');
 
 
 //invoke thos function in a instance or variable
@@ -36,8 +37,8 @@ let users=[
 ]
 
 //miniapp
-const userRouter=require('../Routers/userRouter')
-const authRouter=require('../Routers/authRouter')
+const userRouter=require('./Routers/userRouter')
+const authRouter=require('./Routers/authRouter')
 app.use('/user',userRouter);
 app.use('/auth',authRouter);
 

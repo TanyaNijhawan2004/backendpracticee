@@ -41,7 +41,17 @@ const userSchema=new mongoose.Schema({
         validate:function(){
             return this.confirmpassword=this.password;
     }
-    }
+    },
+    role:{
+        type:String,
+        enum:['admin','user','resturantowner','deliveryboy'],
+        default:'user'
+
+    },
+    profileImage:{
+        type:String,
+        default:'img/users/default.jpg'
+    },
 });
 
 //since confirm password is redundant data we need to remove the thing 
