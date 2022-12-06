@@ -46,8 +46,10 @@ const userSchema=new mongoose.Schema({
 
 //since confirm password is redundant data we need to remove the thing 
 //and not get saved 
-userSchema.pre('save',function(){
+userSchema.pre('save',async function(done){
     this.confirmpassword=undefined;
+    done();
+    throw new Error('something went wrong');
 })
 
 userSchema.pre('save',async function(){
