@@ -2,8 +2,8 @@
 const emailValidator=require('email-validator');
 const mongoose=require('mongoose');
 const bcrypt=require('bcrypt');
-
-const db_link='mongodb+srv://tanya:tanya@cluster0.gevzwb3.mongodb.net/?retryWrites=true&w=majority'
+dotenv.config({path:'./config.env'});
+const db_link=process.env.DATABASE;
 mongoose.connect(db_link)
 .then(function(db){
     //console.log(db)

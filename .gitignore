@@ -1,4 +1,3 @@
 node_modules/
-mongo/
-npm/
-statuscode&redirect/
+config.env
+secrets.js

@@ -1,12 +1,14 @@
 //require dependicy downloaded
 const express=require('express');
 const userModel=require('./models/userModel');
+const dotenv=require('dotenv');
 const cookieParser=require('cookie-parser');
 const { result, create, reverse } = require('lodash');
 const bodyParser = require('body-parser');
 const emailValidator=require('email-validator');
 const protectRoute=require('./Routers/authHelper');
 
+dotenv.config({path:'./config.env'});
 
 //invoke thos function in a instance or variable
 const app=express();
@@ -41,8 +43,6 @@ const userRouter=require('./Routers/userRouter')
 const authRouter=require('./Routers/authRouter')
 app.use('/user',userRouter);
 app.use('/auth',authRouter);
-
-
 
 
 // app.get('/user',(req,res)=>{
